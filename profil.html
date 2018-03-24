@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <style type="text/css">
+    body{
+      background-image: url(ghsvfbvgsj.jpeg);
+      background-size: cover;
+      background-position: absolute;
+    }
+
+    .tulisan{
+      font-size: 15px;
+      font-family: arial;
+      color: white;
+      </style>
+  
+</head>
+<body>
+<div class="tulisan">
+  <form>
+  DAFTARKAN DIRI ANDA<br>
+  <br>
+ <form action="/action_page.php" autocomplete="on">
+    Nama Lengkap:<br>
+    <input type="text" name="fullname"><br>
+    E-mail:<br>
+    <input type="email" name="email" autocomplete="off"><br>
+    <input type="hidden" name="action" value="users/setPassword">
+    <input type="hidden" name="code" value="{{ code }}">
+    <input type="hidden" name="id" value="{{ id }}">
+    <label for="newPassword">Password</label><br>
+    <input id="newPassword" type="password" name="newPassword"><br>
+    <label for="newPassword">Konfirmasi Password</label><br>
+    <input id="newPassword" type="password" name="confirmPassword"><br>
+    Jenis Kelamin:<br>
+    <select name="Jenis Kelamin"><br>
+    <option value="Laki - laki">Laki - laki</option>
+    <option value="Perempuan">Perempuan</option></select>
+    <br>
+    Alamat:<br>
+    <textarea name="message" style:"width:200px; height:600px" rows="8" cols="30"></textarea>
+    <br>
+    Kode Pos:<br>
+    <input type="text" name="cdpos"><br>
+    Mobile Phone:<br>
+    <input type="text" name="nohp"><br>
+    <input type="submit" value="Register">
+    <input type="reset" value="Cancel"><br>
+</form>
+</form>
+<div class="tulisan">
+</body>
+</html>
